@@ -266,7 +266,7 @@ void Light_Car() {
     }
     int leftLightValue = getLeftPhotosensitiveADCValue();
     int rightLightValue = getRightPhotosensitiveADCValue();
-    int diffLightValue = (leftLightValue - rightLightValue) / 8;
+    int diffLightValue = (rightLightValue - leftLightValue) / 8;
     if (leftLightValue > LIGHT_MIN_MOVED && rightLightValue > LIGHT_MIN_MOVED) {
       int lsp = constrain(LIGHT_MODE_CRUISE_SPEED + diffLightValue, -100, 100);
       int rsp = constrain(LIGHT_MODE_CRUISE_SPEED - diffLightValue, -100, 100);
@@ -331,10 +331,10 @@ void Track_Car() {
         Emotion_SetMode(3);
         Motor_Move(SPEED_LV1, SPEED_LV1);  //Move Forward
         break;
-      case 0:              //000
+      case 7:              //111
         Motor_Move(0, 0);  //Stop
         break;
-      case 7:  //111
+      case 0:  //000
         Emotion_SetMode(4);
         Motor_Move(SPEED_LV1, SPEED_LV1);  //Move Forward
         break;

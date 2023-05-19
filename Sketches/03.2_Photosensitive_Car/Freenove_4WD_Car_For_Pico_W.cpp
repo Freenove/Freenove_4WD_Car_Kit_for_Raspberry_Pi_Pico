@@ -257,7 +257,7 @@ void Light_Car() {
     }
     int leftLightValue = getLeftPhotosensitiveADCValue();
     int rightLightValue = getRightPhotosensitiveADCValue();
-    int diffLightValue = (leftLightValue - rightLightValue) / 8;
+    int diffLightValue = (rightLightValue - leftLightValue) / 8;
     if (leftLightValue > LIGHT_MIN_MOVED && rightLightValue > LIGHT_MIN_MOVED) {
       int lsp = constrain(LIGHT_MODE_CRUISE_SPEED + diffLightValue, -100, 100);
       int rsp = constrain(LIGHT_MODE_CRUISE_SPEED - diffLightValue, -100, 100);
