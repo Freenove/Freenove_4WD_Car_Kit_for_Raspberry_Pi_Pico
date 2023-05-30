@@ -38,18 +38,18 @@ char password_AP[]     = "********";      //Set your AP password for Pico W to S
 WiFiServer server_Cmd(4002);
 
 void setup() {
-  Buzzer_Setup();  //Buzzer initialization
+  Buzzer_Setup();                //Buzzer initialization
   Serial.begin(115200);
-  WiFi_Setup(0);                //Set mode. When the parameter is 1, AP mode is enabled. If the parameter is 0, the STA mode is enabled.
-  server_Cmd.begin(4002);       //Start the command server
-  server_Cmd.setNoDelay(true);  //Set no delay in sending and receiving data
+  WiFi_Setup(0);                 //Set mode. When the parameter is 1, AP mode is enabled. If the parameter is 0, the STA mode is enabled.
+  server_Cmd.begin(4002);        //Start the command server
+  server_Cmd.setNoDelay(true);   //Set no delay in sending and receiving data
   Wire.begin();
-  Motor_Setup();                   //Motor initialization
-  Servo_Setup();                   //Servo initialization
-  WS2812_Setup();                  //WS2812 initialization
-  Emotion_and_Ultrasonic_Setup();  //Emotion initialization or Ultrasonic initialization
-  Photosensitive_Setup();          //Light initialization
-  Track_Setup();                   //Track initialization
+  Motor_Setup();                 //Motor initialization
+  Servo_Setup();                 //Servo initialization
+  WS2812_Setup();                //WS2812 initialization
+  Emotion_and_Ultrasonic_Setup();//Emotion initialization or Ultrasonic initialization
+  Photosensitive_Setup();        //Light initialization
+  Track_Setup();                 //Track initialization
   Servo_1_Angle(90);
   delay(500);
 }
