@@ -31,10 +31,10 @@ int sendOnceModuleCheck = 1;
 int cmdFlag;
 
 //WiFi parameter setting
-char ssid_Router[] = "FYI_2.4G";         //Modify according to your router name
-char password_Router[] = "freenove208";  //Modify according to your router password
-char ssid_AP[] = "Sunshine";             //Pico W turns on an AP and calls it Sunshine
-char password_AP[] = "Sunshine";         //Set your AP password for Pico W to Sunshine
+char ssid_Router[]     = "********";      //Modify according to your router name
+char password_Router[] = "********";      //Modify according to your router password
+char ssid_AP[]         = "********";      //Pico W turns on an AP and calls it Sunshine
+char password_AP[]     = "********";      //Set your AP password for Pico W to Sunshine
 WiFiServer server_Cmd(4002);
 
 void setup() {
