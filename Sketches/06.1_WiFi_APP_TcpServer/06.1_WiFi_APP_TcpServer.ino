@@ -7,10 +7,10 @@
 #include <WiFi.h>
 #include <WiFiClient.h>
 
-const char* ssid_Router     =   "FYI_2.4G";   //Modify according to your router name
-const char* password_Router =   "freenove208";//Modify according to your router password
-const char* ssid_AP         =   "Sunshine";   //Raspberry Pi Pico W turns on an AP and calls it Sunshine
-const char* password_AP     =   "Sunshine";   //Set your AP password for Pico W to Sunshine
+const char* ssid_Router     =   "********";   //Modify according to your router name
+const char* password_Router =   "********";   //Modify according to your router password
+const char* ssid_AP         =   "********";   //Raspberry Pi Pico W turns on an AP and calls it Sunshine
+const char* password_AP     =   "********";   //Set your AP password for Pico W to Sunshine
 WiFiServer server_Cmd(4002);
 
 void setup() {

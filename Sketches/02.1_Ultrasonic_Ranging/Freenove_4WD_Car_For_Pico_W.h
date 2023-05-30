@@ -31,13 +31,13 @@ void Servo_Sweep(int servo_id, int angle_start, int angle_end);//Servo sweep fun
 #define MOTOR_SPEED_MIN       -100       //Define a minimum speed limit for wheels
 #define MOTOR_SPEED_MAX       100        //Define a maximum speed limit for wheels
 
-void Motor_Setup(void);                //motor initialization
+void Motor_Setup(void);                  //motor initialization
 void Motor_Move_Init(int m1_speed, int m2_speed, int m3_speed, int m4_speed);//A function to control the car motor
 void Motor_Move(int Left_speed, int Right_speed);//A function to control the car motor
 
 //////////////////////Buzzer drive area///////////////////////////////////
 //Buzzer pin definition             
-#define PIN_BUZZER 2                    //Define the pins for the ESP32 control buzzer
+#define PIN_BUZZER 2                    //Define the pins for the Pico W control buzzer
 #define BUZZER_FREQUENCY 2000           //Define the resonant frequency of the buzzer 
 void Buzzer_Setup(void);                //Buzzer initialization
 void Buzzer_Alert(int beat, int rebeat);//Buzzer alarm function

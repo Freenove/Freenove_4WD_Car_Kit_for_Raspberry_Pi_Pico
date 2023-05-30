@@ -144,7 +144,7 @@ byte clearEmotion[][8] = {
 };
 
 Freenove_VK16K33 matrix = Freenove_VK16K33();
-//Freenove_ESP32_VK16K33 matrix = Freenove_ESP32_VK16K33();
+
 int emotion_time_next = 0;
 int emotion_time_now = 0;
 int emotion_count = 0;

@@ -47,7 +47,7 @@ void Motor_Move(int Left_speed, int Right_speed);//A function to control the car
 
 //////////////////////Buzzer drive area///////////////////////////////////
 //Buzzer pin definition             
-#define PIN_BUZZER 2                    //Define the pins for the ESP32 control buzzer
+#define PIN_BUZZER 2                    //Define the pins for the Pico control buzzer
 #define BUZZER_FREQUENCY 2000           //Define the resonant frequency of the buzzer 
 void Buzzer_Setup(void);                //Buzzer initialization
 void Buzzer_Alert(int beat, int rebeat);//Buzzer alarm function
