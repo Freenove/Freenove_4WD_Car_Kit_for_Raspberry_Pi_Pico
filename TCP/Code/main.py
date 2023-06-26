@@ -283,7 +283,7 @@ class mywindow(QMainWindow,Ui_Client):
             self.Light.setText("Light off")
             self.UltrasonicFlag = 0
             self.Ultrasonic.setText("Ultrasonic off")
-            Turn_Left=self.intervalChar+str(50)+self.intervalChar+str(-50)+self.endChar
+            Turn_Left=self.intervalChar+str(-50)+self.intervalChar+str(50)+self.endChar
             self.TCP.sendData(cmd.CMD_MOTOR+ Turn_Left)
 
     def on_btn_BackWard(self):
