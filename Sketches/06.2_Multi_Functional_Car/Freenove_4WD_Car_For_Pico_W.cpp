@@ -268,8 +268,8 @@ void Light_Car() {
     int rightLightValue = getRightPhotosensitiveADCValue();
     int diffLightValue = (rightLightValue - leftLightValue) / 8;
     if (leftLightValue > LIGHT_MIN_MOVED && rightLightValue > LIGHT_MIN_MOVED) {
-      int lsp = constrain(LIGHT_MODE_CRUISE_SPEED + diffLightValue, -100, 100);
-      int rsp = constrain(LIGHT_MODE_CRUISE_SPEED - diffLightValue, -100, 100);
+      int lsp = constrain(LIGHT_MODE_CRUISE_SPEED - diffLightValue, -100, 100);
+      int rsp = constrain(LIGHT_MODE_CRUISE_SPEED + diffLightValue, -100, 100);
       // Serial.println("sp: " + String(lsp) + " " + String(rsp) + " " + String(diffLightValue));
       Motor_Move(lsp, rsp);
     } else {
