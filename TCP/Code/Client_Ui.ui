@@ -217,9 +217,9 @@ font: 10pt &quot;Arial&quot;;</string>
   <widget class="QPushButton" name="Btn_ForWard">
    <property name="geometry">
     <rect>
-     <x>185</x>
+     <x>170</x>
      <y>410</y>
-     <width>90</width>
+     <width>70</width>
      <height>30</height>
     </rect>
    </property>
@@ -267,12 +267,12 @@ font: 10pt &quot;Arial&quot;;</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="Btn_Turn_Left">
+  <widget class="QPushButton" name="Btn_Move_Left">
    <property name="geometry">
     <rect>
-     <x>75</x>
+     <x>85</x>
      <y>460</y>
-     <width>90</width>
+     <width>70</width>
      <height>30</height>
     </rect>
    </property>
@@ -289,15 +289,15 @@ font: 10pt &quot;Arial&quot;;</string>
     <string notr="true">font: 10pt &quot;Arial&quot;;</string>
    </property>
    <property name="text">
-    <string>Turn Left</string>
+    <string>Move Left</string>
    </property>
   </widget>
   <widget class="QPushButton" name="Btn_BackWard">
    <property name="geometry">
     <rect>
-     <x>185</x>
+     <x>170</x>
      <y>510</y>
-     <width>90</width>
+     <width>70</width>
      <height>30</height>
     </rect>
    </property>
@@ -317,12 +317,12 @@ font: 10pt &quot;Arial&quot;;</string>
     <string>BackWard</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="Btn_Turn_Right">
+  <widget class="QPushButton" name="Btn_Move_Right">
    <property name="geometry">
     <rect>
-     <x>295</x>
+     <x>260</x>
      <y>460</y>
-     <width>90</width>
+     <width>70</width>
      <height>30</height>
     </rect>
    </property>
@@ -339,7 +339,7 @@ font: 10pt &quot;Arial&quot;;</string>
     <string notr="true">font: 10pt &quot;Arial&quot;;</string>
    </property>
    <property name="text">
-    <string>Turn Right</string>
+    <string>Move Right</string>
    </property>
   </widget>
   <widget class="QPushButton" name="Btn_Left">
@@ -526,8 +526,8 @@ font: 10pt &quot;Arial&quot;;</string>
   <widget class="QProgressBar" name="progress_Power">
    <property name="geometry">
     <rect>
-     <x>15</x>
-     <y>520</y>
+     <x>10</x>
+     <y>360</y>
      <width>70</width>
      <height>30</height>
     </rect>
@@ -563,9 +563,9 @@ font: 10pt &quot;Arial&quot;;</string>
   <widget class="QPushButton" name="Btn_Buzzer">
    <property name="geometry">
     <rect>
-     <x>185</x>
+     <x>170</x>
      <y>460</y>
-     <width>90</width>
+     <width>70</width>
      <height>30</height>
     </rect>
    </property>
@@ -955,7 +955,7 @@ font: 10pt &quot;Arial&quot;;</string>
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>365</y>
+     <y>360</y>
      <width>241</width>
      <height>31</height>
     </rect>
@@ -1433,8 +1433,8 @@ font: 10pt &quot;Arial&quot;;</string>
     <rect>
      <x>0</x>
      <y>40</y>
-     <width>401</width>
-     <height>301</height>
+     <width>391</width>
+     <height>291</height>
     </rect>
    </property>
    <property name="font">
@@ -1460,6 +1460,206 @@ font: 10pt &quot;Arial&quot;;</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Btn_Dia_Left">
+   <property name="geometry">
+    <rect>
+     <x>85</x>
+     <y>410</y>
+     <width>70</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;Arial&quot;;</string>
+   </property>
+   <property name="text">
+    <string>↖</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Btn_Dia_Right">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>410</y>
+     <width>70</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;Arial&quot;;</string>
+   </property>
+   <property name="text">
+    <string>↗</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Btn_DiaD_Left">
+   <property name="geometry">
+    <rect>
+     <x>85</x>
+     <y>510</y>
+     <width>70</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;Arial&quot;;</string>
+   </property>
+   <property name="text">
+    <string>↙</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Btn_DiaD_Right">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>510</y>
+     <width>70</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;Arial&quot;;</string>
+   </property>
+   <property name="text">
+    <string>↘</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Btn_Turn_Left">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>460</y>
+     <width>70</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>Turn Left</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Btn_Turn_Right">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>460</y>
+     <width>70</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;Arial&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Turn Right</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Btn_Modechange">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>510</y>
+     <width>70</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>Wheel</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Rotation">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>510</y>
+     <width>70</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>Rotate off</string>
    </property>
   </widget>
  </widget>

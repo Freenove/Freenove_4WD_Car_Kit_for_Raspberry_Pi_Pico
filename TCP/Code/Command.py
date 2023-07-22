@@ -1,6 +1,8 @@
 class COMMAND:
 
     CMD_MOTOR      =  "M"
+    CMD_M_MOTOR    =  "N"
+    CAR_CAR_ROTATE =  "O"
     CMD_LED        =  "L"
     CMD_LED_MOD    =  "D"
     CMD_SERVO      =  "S"
