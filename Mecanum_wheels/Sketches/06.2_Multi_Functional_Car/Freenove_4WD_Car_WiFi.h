@@ -15,7 +15,7 @@
 #define CMD_CAR_MODE        "C"           //Car control command
 #define CMD_SIGN            "A"           //Car control command
 #define CMD_M_MOTOR         "N"           //Motor control command
-#define CAR_CAR_ROTATE      "O"           //Car rotate command
+#define CMD_CAR_ROTATE      "O"           //Car rotate command
 
 extern char ssid_Router[]             ;    //Modify according to your router name
 extern char password_Router[]         ;    //Modify according to your router password
