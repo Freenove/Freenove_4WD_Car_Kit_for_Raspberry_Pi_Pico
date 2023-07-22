@@ -4,6 +4,8 @@
 
 <img src='Picture/icon.png' width='30%'/>
 
+<img src='Picture/icon1.png' width='30%'/>
+
 ### Download
 
 * **Use command in console**
