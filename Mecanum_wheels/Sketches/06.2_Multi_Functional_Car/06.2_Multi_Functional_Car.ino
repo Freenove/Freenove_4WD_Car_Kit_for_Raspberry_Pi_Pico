@@ -120,7 +120,7 @@ void loop() {
           int BR = LY + LX + RX;  //RX stands for angular velocity
           Motor_M_Move(FL, BL, BR, FR);
         }
-        if (CmdArray[0] == CAR_CAR_ROTATE)  //Rotate car command
+        if (CmdArray[0] == CMD_CAR_ROTATE)  //Rotate car command
         {
           Car_SetMode(0);
           float battery_voltage = Get_Battery_Voltage();
@@ -158,7 +158,7 @@ void loop() {
                 String inputStringTemp = client.readStringUntil('\n');
                 Get_Command(inputStringTemp);
                 Serial.println(inputStringTemp);
-                if (CmdArray[0] == CAR_CAR_ROTATE && paramters[3] == 0) {
+                if (CmdArray[0] == CMD_CAR_ROTATE && paramters[3] == 0) {
                   Motor_M_Move(0, 0, 0, 0);
                   break;
                 }
