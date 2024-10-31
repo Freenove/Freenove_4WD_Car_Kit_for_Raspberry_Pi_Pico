@@ -379,6 +379,7 @@ void Track_Car() {
 #define SONAR_MODE_CRUISE_SPEED (40+oa_VoltageCompensationToSpeed)
 typedef uint8_t u8;
 #define COUNT_GET_SONAR 1
+int sonar_distance = 0;
 void Ultrasonic_Car() {
   int distance[3], tempDistance[3][5], sumDisntance;
   static u8 leftToRight = 0, servoAngle = 0, lastServoAngle = 0;  //
@@ -402,6 +403,7 @@ void Ultrasonic_Car() {
       distance[2 - i] = sumDisntance / COUNT_GET_SONAR;
     }
     sumDisntance = 0;
+    sonar_distance = distance[1];
   }
   leftToRight = (leftToRight + 1) % 2;
   // Serial.println("Sonar : " + String(distance[0]) + " " + String(distance[1]) + " " + String(distance[2]));

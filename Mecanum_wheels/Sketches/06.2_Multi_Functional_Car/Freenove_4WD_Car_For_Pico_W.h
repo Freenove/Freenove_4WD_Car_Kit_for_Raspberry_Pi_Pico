@@ -86,7 +86,7 @@ void Light_Car(void);               //Light Car
 #define SOUND_VELOCITY    340           //soundVelocity: 340m/s
 void Ultrasonic_Setup(void);//Ultrasonic initialization
 float Get_Sonar(void);//Obtain ultrasonic distance data
-extern int distance[4]; 
+extern int sonar_distance;
 
 #define OBSTACLE_DISTANCE      45
 #define OBSTACLE_DISTANCE_LOW  25

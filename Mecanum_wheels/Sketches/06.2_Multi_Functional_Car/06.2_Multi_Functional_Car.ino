@@ -21,6 +21,7 @@ long int lastUploadVoltageTime;
 long int lastUploadLIGHTADCTime;
 #define UPLOAD_LINEVOL_TIME 200
 long int lastUploadLINEVOLTime;
+#define UPLOAD_SONARVOL_TIME 20
 long int lastUploadSONARVOLTime;
 float time_proportion = 5.5;  //If you want to get the best out of the rotation mode, change the value by experimenting
 int buzzer_frequency = 0;
@@ -237,9 +238,10 @@ void loop() {
         }
       }
       if (carFlag == CAR_MODE_SONAR && Check_Module_value == SONAR_IS_ESIST) {
-        float distance = Get_Sonar();
-        client.print("C#3#" + String(distance) + "\n");
-        lastUploadSONARVOLTime = millis();
+        if(millis() - lastUploadSONARVOLTime > UPLOAD_SONARVOL_TIME){
+          client.print("C#3#" + String(sonar_distance) + "\n");
+          lastUploadSONARVOLTime = millis();
+        }
       }
     }
     client.stop();  //close the connection:
