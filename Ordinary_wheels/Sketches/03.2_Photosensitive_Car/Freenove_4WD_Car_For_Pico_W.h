@@ -58,8 +58,8 @@ void Set_Battery_Coefficient(float coefficient);//Set the partial pressure coeff
 void oa_CalculateVoltageCompensation(void);
 
 ////////////////////Photosensitive drive area//////////////////////////////
-#define Left_PHOTOSENSITIVE_PIN    27
-#define Right_PHOTOSENSITIVE_PIN   28
+#define Left_PHOTOSENSITIVE_PIN    28
+#define Right_PHOTOSENSITIVE_PIN   27
 
 void Photosensitive_Setup(void);           //Photosensitive initialization
 int getLeftPhotosensitiveADCValue(void);              //Gets the photosensitive resistance value

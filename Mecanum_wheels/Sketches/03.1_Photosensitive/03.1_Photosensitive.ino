@@ -4,8 +4,8 @@
   Auther      : www.freenove.com
   Modification: 2023/04/13
 **********************************************************************/
-#define Left_PHOTOSENSITIVE_PIN 27  //Define the pins that Raspberry Pi Pico reads photosensitive
-#define Right_PHOTOSENSITIVE_PIN 28 //Define the pins that Raspberry Pi Pico reads photosensitive
+#define Left_PHOTOSENSITIVE_PIN 28  //Define the pins that Raspberry Pi Pico reads photosensitive
+#define Right_PHOTOSENSITIVE_PIN 27 //Define the pins that Raspberry Pi Pico reads photosensitive
 int getLeftPhotosensitiveADCValue;  //Define a variable to store the left photosensitive adc value
 int getRightPhotosensitiveADCValue; //Define a variable to store the right photosensitive adc value
 
