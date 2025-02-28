@@ -112,6 +112,4 @@ extern bool isLightModeFirstStarting ;  //is_light_mode_first_starting
 bool i2CAddrTest(uint8_t addr);
 void Emotion_and_Ultrasonic_Setup(void);
 
-void Get_Command(String inputStringTemp) ;
-
 #endif

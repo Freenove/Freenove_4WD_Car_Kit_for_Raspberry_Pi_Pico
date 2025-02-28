@@ -4,18 +4,18 @@
 ///////////////////WiFi command area////////////////////////////////////////
 
 #define ENTER               '\n'                  //ENTER
-#define INTERVAL_CHAR       '#'                   //INTERVAL CHAR
-#define CMD_MOTOR           "M"           //Motor control command
-#define CMD_POWER           "P"           //Power control command
-#define CMD_BUZZER          "B"           //BUZZER control command
-#define CMD_SERVO           "S"           //SERVO control command
-#define CMD_LED_MOD         "D"           //WS2812 control command
-#define CMD_LED             "L"           //WS2812 color command
-#define CMD_MATRIX_MOD      "T"           //LED MATRIX control command
-#define CMD_CAR_MODE        "C"           //Car control command
-#define CMD_SIGN            "A"           //Car control command
-#define CMD_M_MOTOR         "N"           //Motor control command
-#define CMD_CAR_ROTATE      "O"           //Car rotate command
+#define INTERVAL_CHAR       "#"                   //INTERVAL CHAR
+#define CMD_MOTOR           'M'           //Motor control command
+#define CMD_POWER           'P'           //Power control command
+#define CMD_BUZZER          'B'           //BUZZER control command
+#define CMD_SERVO           'S'           //SERVO control command
+#define CMD_LED_MOD         'D'           //WS2812 control command
+#define CMD_LED             'L'           //WS2812 color command
+#define CMD_MATRIX_MOD      'T'           //LED MATRIX control command
+#define CMD_CAR_MODE        'C'           //Car control command
+#define CMD_SIGN            'A'           //Car control command
+#define CMD_M_MOTOR         'N'           //Motor control command
+#define CMD_CAR_ROTATE      'O'           //Car rotate command
 
 extern char ssid_Router[]             ;    //Modify according to your router name
 extern char password_Router[]         ;    //Modify according to your router password

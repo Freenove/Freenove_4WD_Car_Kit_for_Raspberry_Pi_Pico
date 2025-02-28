@@ -28,7 +28,7 @@ int buzzer_frequency = 0;
 int CAR_MODE_VOL = 0;
 int LASt_CAR_MODE_VOL = 0;
 
-String CmdArray[8];
+char CmdArray[8];
 int paramters[8];
 int sendOnceModuleCheck = 1;
 int cmdFlag;
@@ -59,7 +59,7 @@ void setup() {
 }
 
 void loop() {
-  WiFiClient client = server_Cmd.available();  //listen for incoming clients
+  WiFiClient client = server_Cmd.accept();  //listen for incoming clients
   if (client) {                                //if you get a client
     Serial.println("Cmd_Server connected to a client.");
     while (client.connected()) {
@@ -74,7 +74,10 @@ void loop() {
       if (client.available()) {                                 //if there's bytes to read from the client
         String inputStringTemp = client.readStringUntil('\n');  //Read the command by WiFi
         Serial.println(inputStringTemp);                        //Print out the command received by WiFi
-        Get_Command(inputStringTemp);
+        int string_length = inputStringTemp.length() + 1;
+        char str[string_length];
+        inputStringTemp.toCharArray(str, string_length);
+        Get_Command(str);
         if (CmdArray[0] == CMD_LED_MOD)  //Set the display mode of car colored lights
         {
           WS2812_SetMode(paramters[1]);
@@ -157,8 +160,11 @@ void loop() {
               }
               if (client.available()) {
                 String inputStringTemp = client.readStringUntil('\n');
-                Get_Command(inputStringTemp);
                 Serial.println(inputStringTemp);
+                int string_length = inputStringTemp.length() + 1;
+                char str[string_length];
+                inputStringTemp.toCharArray(str, string_length);
+                Get_Command(str);
                 if (CmdArray[0] == CMD_CAR_ROTATE && paramters[3] == 0) {
                   Motor_M_Move(0, 0, 0, 0);
                   break;
@@ -251,21 +257,13 @@ void loop() {
   }
 }
 
-void Get_Command(String inputStringTemp) {
-  int string_length = inputStringTemp.length();
-  for (int i = 0; i < 8; i++) {  //Parse the command received by WiFi
-    int index = inputStringTemp.indexOf(INTERVAL_CHAR);
-    if (index < 0) {
-      if (string_length > 0) {
-        CmdArray[i] = inputStringTemp;           //Get command
-        paramters[i] = inputStringTemp.toInt();  //Get parameters
-      }
-      break;
-    } else {
-      string_length -= index;                                  //Count the remaining words
-      CmdArray[i] = inputStringTemp.substring(0, index);       //Get command
-      paramters[i] = CmdArray[i].toInt();                      //Get parameters
-      inputStringTemp = inputStringTemp.substring(index + 1);  //Update string
+void Get_Command(char *string) {
+  char *token = strtok(string, INTERVAL_CHAR); 
+  CmdArray[0] = token[0];                    // Put the command into an array         
+  for (int i = 0; i < 5; i++) {
+    if (token != NULL) {
+      token = strtok(NULL, INTERVAL_CHAR);
     }
+    paramters[i + 1] = atoi(token);
   }
 }
