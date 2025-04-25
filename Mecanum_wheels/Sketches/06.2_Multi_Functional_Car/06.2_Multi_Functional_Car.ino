@@ -9,7 +9,7 @@
 #include <WiFi.h>
 #include <WiFiClient.h>
 #include <Wire.h>
-#include <Math.h>
+#include <math.h>
 #include "Freenove_4WD_Car_WiFi.h"
 #include "Freenove_4WD_Car_Emotion.h"
 #include "Freenove_4WD_Car_WS2812.h"

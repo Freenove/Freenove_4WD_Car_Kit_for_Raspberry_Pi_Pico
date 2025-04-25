@@ -7,20 +7,19 @@
 **********************************************************************/
 #include <WiFi.h>
 
-#define port 80
+#define port 4002
 const char *ssid_Router      = "********";  //input your wifi name
 const char *password_Router  = "********";  //input your wifi passwords
 WiFiServer  server(port);
 
-
 void setup()
 {
     Serial.begin(115200);
+    delay(1000);
     Serial.printf("\nConnecting to ");
     Serial.println(ssid_Router);
     WiFi.disconnect();
     WiFi.begin(ssid_Router, password_Router);
-    delay(1000);
     while (WiFi.status() != WL_CONNECTED) {
         delay(500);
         Serial.print(".");
@@ -34,7 +33,7 @@ void setup()
 }
 
 void loop(){
- WiFiClient client = server.available();            // listen for incoming clients
+ WiFiClient client = server.accept();            // listen for incoming clients
   if (client) {                                     // if you get a client,
     Serial.println("Client connected.");
     while (client.connected()) {                    // loop while the client's connected
