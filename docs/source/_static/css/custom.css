@@ -1,0 +1,785 @@
+
+:root{
+    --fn_nav_height: 2.0rem
+}
+
+.extrabody-content{
+    /* border: solid #00F 2px; */
+    background-color: #EFEFEF;
+    height: var(--fn_nav_height);
+}
+
+
+.wy-grid-for-nav {
+    top: var(--fn_nav_height);
+    height: calc(100% - var(--fn_nav_height));
+    /* height: 90%; */
+    overflow-y: auto;
+    position: fixed;
+}
+
+
+.wy-nav-side {
+    top: var(--fn_nav_height);
+    z-index: 2;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+/* description: freenove-docs QR code style
+
+ * author: vegetable-syc
+
+ * date: 2025/04/28
+ */
+
+.float-left {
+    margin-left: 95px;  /* Left spacing */
+    margin-right: 20px; /* Right spacing */
+}
+
+.float-right {
+    margin-left: 15px;  /* Left spacing */
+    margin-right: 85px; /* Right spacing */
+}
+
+.custom-center {
+    margin: 20px 20px 0px 390px;  /* Top, Right, Bottom, Left spacing */
+}
+/* ---------------------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------------------------- */
+/* description: About Table
+
+ * author: vegetable-syc
+
+ * date: 2025/05/27
+ */
+
+/* Orange and white zebra-striped table */
+table.freenove-ow {
+  border-collapse: collapse;            /* Collapse table borders (no gaps) */
+  width: auto;
+  margin: auto auto;
+  /* border-radius: 8px; */
+  overflow: hidden;
+}
+
+table.freenove-ow td, 
+table.freenove-ow th {
+  padding: 14px 16px !important;        /* Set cell padding top/bottom left/right */
+  border: 1px solid #000000 !important;
+}
+
+/* Table row settings */
+table.freenove-ow tbody tr:nth-child(even) {
+  background-color: #f7e0c5;          /* Even row background color */
+  font-family: "DengXian";              /* Set font to DengXian */
+  font-size: 20px;
+  font-weight: bold;                    /* Set font weight to bold */
+}
+
+table.freenove-ow tbody tr:nth-child(odd) {
+  background-color: #ffffff;          /* Odd row background color */
+  font-family: "DengXian";              /* Set font to DengXian */
+  font-size: 20px;
+  font-weight: bold;                    /* Set font weight to bold */
+}
+
+/* Table header settings */
+table.freenove-ow thead tr:nth-child(odd) {
+  background-color: #ff7b00;          /* Table header background color */
+  color: #ffffff;                     /* Table header font color */
+  font-weight: bolder;
+  font-family: "DengXian";              /* Set font to DengXian */
+  font-size: 20px;
+}
+/* ---------------------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------------------------- */
+/* description: About Heading
+
+ * author: vegetable-syc
+
+ * date: 2025/05/28
+ */
+
+/* Heading 1 */
+h1 {
+    color: #ff7b00;
+    font-size: 35px;
+    font-family: "DengXian";
+    font-weight: normal;
+}
+
+/* Heading 2 */
+h2 {
+    background-color: #ff7b00;
+    font-size: 30px;
+    font-family: "DengXian";
+    color: white;
+    width: 100%;
+    height: 40px;
+    padding: 3px 2px;
+    font-weight: normal;
+}
+
+/* Heading 3 */
+h3 {
+    color: #ff7b00;
+    font-size: 30px;
+    font-family: "DengXian";
+    font-weight: normal;
+}
+
+/* Heading 4 */
+h4 {
+    color: #ff7b00;
+    font-size: 20px;
+    font-family: "DengXian";
+    font-weight: normal;
+}
+/* ---------------------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------------------------- */
+/* description: Regarding Custom Tags
+
+ * author: vegetable-syc
+
+ * date: 2025/05/28
+ */
+/* Since the class changes every time, we use keyword matching */
+
+/* Override the icon before the title */
+[class^="admonition-"] .admonition-title::before {
+    content: "" !important;
+}
+
+/* Set title style and icon */
+[class^="admonition-"] .admonition-title {
+    background-color: #ff7b00 !important;   /* !important keyword forces override */
+    background-image: url('../images/freenove_admonition.png');
+    background-repeat: no-repeat;
+    background-position: left 5px center;
+    background-size: 24px 24px;
+    padding-left: 30px;                
+    line-height: 24px;
+    /* border-radius: 3px !important; */
+}
+
+/* Set content background color */
+div[class^="admonition-"] {
+    background-color: #dba7594d !important;
+}
+/* ---------------------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------------------------- */
+/* description: Document page settings
+
+ * author: vegetable-syc
+
+ * date: 2025/04/28
+ */
+
+/* Adjust the width of the main content area */
+.wy-nav-content {
+    max-width: 1200px !important; /* Default: 800px */
+    margin: left;
+}
+
+/* Adjust the width of code blocks and tables */
+.wy-table-responsive table td,
+.wy-table-responsive table th {
+    white-space: normal !important;
+}
+
+.rst-content .code-block,
+.rst-content pre.literal-block {
+    max-width: 100%;
+    overflow-x: auto;
+}
+/* ---------------------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------------------------- */
+/* description: About The One-Click Copy Button
+
+ * author: vegetable-syc
+
+ * date: 2025/05/30
+ */
+
+.copy-button {
+    color: #ffffff;
+    background-color: #000;
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    opacity: 0.6;
+    transition: opacity 0.3s;   /* Animation duration after copying */
+}
+.copy-button:hover {
+  opacity: 1;                   /* Opacity when hovering with mouse */
+}
+/* ---------------------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------------------------- */
+/* description: About function parsing
+
+ * author: vegetable-syc
+
+ * date: 2025/05/30
+ */
+
+/* Python */
+dl.py.function {
+    border: 1px solid black;
+    color: black;
+    padding: 0;
+    margin: 10px 0;
+}
+
+dl.py.function dt.sig.sig-object.py {
+    all: revert !important; 
+    display: inline-block !important;
+    padding: 5px 5px !important;
+    background-color: #ff7b00 !important;
+    border: 1px solid black !important;
+    font-weight: bolder !important;
+}
+
+/* C */
+dl.c.function {
+    border: 1px solid black;
+    color: black;
+    padding: 0;
+    margin: 10px 0;
+}
+
+dl.c.function dt.sig.sig-object.c {
+    all: revert !important; 
+    display: inline-block !important;
+    padding: 5px 5px !important;
+    background-color: #ff7b00 !important;
+    border: 1px solid black !important;
+    font-weight: bolder !important;
+}
+/* ---------------------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------------------------- */
+/* description: About Online Document Navigation
+
+ * author: vegetable-syc
+
+ * date: 2025/06/05
+ */
+
+#fnk-quick-jump {
+    position: fixed;    
+    z-index: 1000;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    
+    /* Transition easing animations */
+    transition: top 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), 
+                right 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), 
+                bottom 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), 
+                left 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+                width 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), 
+                height 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), 
+                transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    
+    transform-origin: center center;
+}
+
+/* Control in minimized state */
+#fnk-quick-jump.minimized {
+    width: 60px;
+    height: 60px;
+    cursor: grab;   /* Tooltip: Draggable */
+    transform: none;
+}
+
+#fnk-quick-jump.minimized .fnk-widget {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0);
+    transition: all 0.3s ease;
+}
+
+#fnk-quick-jump.minimized .minimized-icon {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+    transition: all 0.3s ease;
+}
+
+/* Minimized control icon */
+.minimized-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: #ff7b00;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.8rem;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0);
+    transition: all 0.3s ease;
+
+    z-index: 1001;
+
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Main panel style design */
+.fnk-widget {
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 15px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+    padding: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(10px);
+    transform-origin: center;
+    transform: scale(1);
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Control expanded state */
+#fnk-quick-jump.expanded {
+    width: auto;
+    height: auto;
+    cursor: default;
+}
+
+/* Control expanded state - shows main interface */
+#fnk-quick-jump.expanded .fnk-widget {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+}
+
+/* Control expanded state - minimized icon hidden */
+#fnk-quick-jump.expanded .minimized-icon {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0);
+}
+
+/* Show border shadow on main panel hover */
+.fnk-widget:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Styling between main panel title and logo */
+.fnk-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(52, 152, 219, 0.25);
+}
+
+/* Main panel logo styling */
+.fnk-logo {
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50px;
+    display: flex;
+}
+
+/* Main panel title styling */
+.fnk-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    padding: 0 20px;
+}
+
+/* Main panel description styling */
+.fnk-description {
+    font-size: 1rem;
+    color: #5a6b7c;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    padding: 0 10px;
+}
+
+/* Main panel input hint styling */
+.fnk-input-group {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+/* Main panel input field styling */
+.fnk-input {
+    font-size: 1rem !important;
+    width: 100%; 
+    height: 50px; 
+    padding: 15px 20px;
+    border: 2px solid #e0e7ff;
+    border-radius: 9px !important;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Main panel input field selected state styling */
+.fnk-input:focus {
+    outline: none;
+    border-color: #ff7b00;
+    box-shadow: 0 0 0 4px rgba(219, 141, 52, 0.25);
+}
+
+/* Main panel input hint text styling */
+.fnk-input::placeholder {
+    color: #95a5a6;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* Jump button styling */
+.fnk-button {
+    position: absolute;
+    right: 5px;
+    top: 50%; 
+    transform: translateY(-50%); 
+    background: #ff7b00;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    padding: 9px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 8px rgba(219, 147, 52, 0.3);
+}
+
+/* Button hover state styling */
+.fnk-button:hover {
+    background: #ff7b00;
+    transform: translateY(-50%) scale(1.02); 
+    box-shadow: 0 5px 12px rgba(219, 141, 52, 0.4);
+}
+
+/* Search suggestion styling */
+.fnk-suggestions {
+    max-height: 250px;
+    overflow-y: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.95); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    display: none;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Search suggestions list styling */
+.fnk-suggestion-item {
+    padding: 13px 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-bottom: 1px solid rgba(241, 238, 236, 0.6);
+    display: flex;
+    align-items: center;
+}
+
+.fnk-suggestion-item:last-child {
+    border-bottom: none; /* Remove bottom border from last element */
+}
+
+/* Search suggestions list hover styling */
+.fnk-suggestion-item:hover {
+    background: rgba(219, 147, 52, 0.12);
+}
+
+/* Search suggestion list hover style */
+.fnk-suggestion-code {
+    background: #ff7b00;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    margin-right: 15px;
+    font-weight: 600;
+    min-width: 80px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Error message styling */
+.fnk-error-message {
+    color: #e74c3c;
+    font-size: 0.95rem;
+    margin-top: 12px;
+    padding: 10px 15px;
+    background: rgba(231, 76, 60, 0.12);
+    border-radius: 8px;
+    display: none;
+    border: 1px solid rgba(231, 76, 60, 0.2);
+}
+
+/* Access record and icon layout styling */
+.fnk-recent-section {
+    margin-top: 40px; 
+    padding-top: 15px;
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Access log title styling */ 
+.fnk-section-title {
+    font-size: 1.2rem;
+    font-weight: 650;
+    color: #2c3e50;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Recent visits list */
+.fnk-recent-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Recent visits list category */
+.fnk-recent-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: rgba(236, 240, 241, 0.45);
+    border-radius: 10px;
+    transition: all 0.25s ease;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+ /* Recent visits list category hover style */
+.fnk-recent-item:hover {
+    background: rgba(219, 141, 52, 0.15);
+    transform: translateX(5px);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+/* Recent visits list */
+.fnk-recent-code {
+    font-weight: 700;
+    color: #ff7b00;
+    min-width: 80px;
+    font-size: 1.05rem;
+}
+
+/* Recent visits category name */
+.fnk-recent-name {
+    font-size: 1rem;
+    color: #34495e;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+/* Recent visits category description */
+.fnk-key-hint {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6c7a89;
+    padding: 10px;
+    background: rgba(236, 240, 241, 0.45);
+    border-radius: 8px;
+    border: 1px dashed rgba(0,0,0,0.08);
+}
+
+/* Clear recent visits list */
+.fnk-clear-recent {
+    margin-left: auto;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+    padding: 0 8px;
+    font-size: 1.1rem; 
+    color: #95a5a6; 
+}
+
+/* Clear recent visits list hover state */
+.fnk-clear-recent:hover {
+    opacity: 1;     /* 100% opacity on hover */
+}
+/* ---------------------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------------------------- */
+/* description: About the four circular controls
+
+ * author: vegetable-syc
+
+ * date: 2025/06/06
+ */
+
+/* Control position settings */
+.rtd-controls {
+    position: fixed;                /* Fixed positioning */
+    left: 1550px;                   /* Offset from left edge of page */
+    bottom: -10%;                   /* Offset from bottom of page */
+    transform: translateY(-50%);    /* Vertical centering */
+    display: flex;                  /* Flex container */
+    flex-direction: column;         /* Vertical item arrangement */
+    gap: 25px;                      /* Spacing between items */
+    z-index: 1000;                  /* Stacking order */
+}
+
+/* Control styling */
+.control-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;             /* Rounded corners */
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;            /* Center items vertically */
+    justify-content: center;        /* Center items horizontally */
+    color: white;
+    font-size: 24px;
+    cursor: pointer;                /* 显示手型鼠标指针 */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);/* 缓动动画效果 */
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+/* Ripple effect style */
+.ripple {
+    position: absolute;             /* Fixed positioning */
+    border-radius: 50%;             /* Rounded corners */
+    background: rgba(255, 255, 255, 0.6);
+    transform: scale(0);            /* Initial scale set to 0 */
+    animation: ripple-animation 0.6s linear; /* Apply animation */
+}
+
+@keyframes ripple-animation {
+    to { /* Define end state only */
+        transform: scale(4);    /* Scale up by 4 times */
+        opacity: 0;             /* Fully transparent */
+    }
+}
+
+
+.control-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff7f5f00, #feb47b00, #ff7f5f00);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.control-btn:hover {
+    transform: translateX(-10px) scale(1.15);         /* Move left and scale up */
+    box-shadow: 0 8px 25px rgba(255, 180, 95, 0);   /* Shadow transparency (should probably be non-zero) */
+    border-color: rgba(255, 180, 95, 0);            /* Border transparency (should probably be non-zero) */
+}
+
+.control-btn:hover::before {
+    opacity: 1; /* Show gradient background */
+}
+
+.control-btn:hover .tooltip {
+    opacity: 0;     /* Hidden by default */
+    transform: translateX(0);
+}
+
+.tooltip {
+    position: absolute;
+    right: 70px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;     /* Hidden by default */
+    transform: translateX(20px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    backdrop-filter: blur(5px);
+}
+
+.tooltip::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent rgba(0, 0, 0, 0.8);
+}
+
+/* Set control icon color */
+.github-btn { color: #ffffff !important; }
+.youtube { color: #f44336 !important; }
+.docs-btn { color: #66bb6a !important; }
+
+/* Freenove icon style configuration */
+.website-btn {
+  background-image: url("https://cdn.jsdelivr.net/gh/Freenove/freenove-docs/docs/source/_static/images/freenove_logo_tag_icon.png");
+  background-color: rgba(0, 0, 0, 0.7);
+  background-size: 45%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Mobile device configuration */
+@media (max-width: 768px) {
+    .rtd-controls {
+        flex-direction: row;
+        bottom: 20px;
+        top: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        right: auto;
+    }
+    
+    .control-btn:hover {
+        transform: translateY(-10px) scale(1.15);
+    }
+    
+    .tooltip {
+        top: -40px;
+        right: 50%;
+        transform: translateX(50%) translateY(20px);
+    }
+    
+    .tooltip::after {
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+    }
+}
+/* ---------------------------------------------------------------------------------------------- */
