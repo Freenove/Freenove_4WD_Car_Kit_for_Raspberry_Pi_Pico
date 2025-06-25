@@ -12,8 +12,8 @@ import sys
 
 sys.path.insert(0, pathlib.Path(__file__).parents[2].resolve().as_posix())
 
-# os.system("rm -r freenove_Kit")
-# os.system("git clone --depth 1 https://github.com/Freenove/Freenove_4WD_Car_Kit_for_Raspberry_Pi_Pico freenove_Kit")
+os.system("rm -r freenove_Kit")
+os.system("git clone --depth 1 https://github.com/Freenove/Freenove_4WD_Car_Kit_for_Raspberry_Pi_Pico freenove_Kit")
 
 project = "fnk0089-docs"
 # <!!!BEGIN!!!>
