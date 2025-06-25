@@ -52,6 +52,8 @@ Please follow the following safety precautions when using or storing this produc
 * After use, always turn the power OFF and remove or unplug the batteries before storing.
 
 About Freenove
+************************************
+
 Freenove provides open source electronic products and services worldwide.
 
 Freenove is committed to assist customers in their education of robotics, programming and electronic circuits so that they may transform their creative ideas into prototypes and new and innovative products. To this end, our services include but are not limited to:
