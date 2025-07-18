@@ -33,7 +33,7 @@ Installation steps:
     |                                                                                                                                                                     |
     | Use two M3*30 screws and two M3 nuts to fix the motor on the bracket.                                                                                               |
     |                                                                                                                                                                     |
-    | :red:Caution: Do not remove the cable tie from the motor; otherwise, the motor cable may become detached.`                                                          |
+    | :red:`Caution: Do not remove the cable tie from the motor; otherwise, the motor cable may become detached.`                                                         |
     |                                                                                                                                                                     |
     | If you perform step 2 before step 1, please check whether the M3 nut located under the motor in step 2 is at the same level as the bracket.                         |
     |                                                                                                                                                                     |
