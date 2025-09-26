@@ -99,7 +99,7 @@ Servo package: one servo, three rocker arms, two M2*8 screws and one M2*4 screw.
     |                                                                                                                 |
     | |Chapter01_09|                                                                                                  |
     |                                                                                                                 |
-    | Use two M2*8 screws and two M2 nuts to mount the servo1 on the shield. Pay attention to the servo's direction. |
+    | Use two M2*8 screws and two M2 nuts to mount the servo1 on the shield. Pay attention to the servo's direction.  |
     +-----------------------------------------------------------------------------------------------------------------+
     | Step 2 Wiring of the servor motor                                                                               |
     |                                                                                                                 |
