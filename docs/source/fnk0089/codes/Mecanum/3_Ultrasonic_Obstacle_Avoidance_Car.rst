@@ -10,15 +10,20 @@ This chapter requires replacing the LED matrix with the ultrasonic module. Pleas
 Replace the ultrasonic module.
 ===================================
 
-+-------------------------------------------------------+
-| Step 1 Installing the ultrasonic module.              |
-|                                                       |
-| |Chapter03_00|                                        |
-+-------------------------------------------------------+
-| Use cable to connect the two connectors marked below. |
-|                                                       |
-| |Chapter03_01|                                        |
-+-------------------------------------------------------+
+.. table:: 
+    :align: center
+    :class: table-line
+    :width: 90%
+
+    +-------------------------------------------------------+
+    | Step 1 Installing the ultrasonic module.              |
+    |                                                       |
+    | |Chapter03_00|                                        |
+    +-------------------------------------------------------+
+    | Use cable to connect the two connectors marked below. |
+    |                                                       |
+    | |Chapter03_01|                                        |
+    +-------------------------------------------------------+
 
 .. |Chapter03_00| image:: ../_static/imgs/Mecanum/3_Ultrasonic_Obstacle_Avoidance_Car/Chapter03_00.png
 .. |Chapter03_01| image:: ../_static/imgs/Mecanum/3_Ultrasonic_Obstacle_Avoidance_Car/Chapter03_01.png
@@ -34,6 +39,9 @@ The ultrasonic ranging module uses the principle that ultrasonic waves will be s
 The ultrasonic ranging module integrates both an ultrasonic transmitter and a receiver. The transmitter is used to convert electrical signals (electrical energy) into high frequency (beyond human hearing) sound waves (mechanical energy) and the function of the receiver is opposite of this. The picture and the diagram of the ultrasonic ranging module are shown below: 
 
 .. list-table::
+    :align: center
+    :class: table-line
+    :width: 70%
     
     * - |Chapter03_03| 
       - |Chapter03_04|

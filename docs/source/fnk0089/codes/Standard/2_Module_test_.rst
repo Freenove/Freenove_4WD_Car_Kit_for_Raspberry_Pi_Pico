@@ -85,6 +85,8 @@ Next, we download the code to Raspberry Pi Pico (W) to test the motor. Open "01.
 
 .. image:: ../_static/imgs/Standard/2_Module_test_/Chapter02_04.png
     :align: center
+    :class: image-border
+    :width: 65%
 
 Code
 --------------------------------------
@@ -196,6 +198,8 @@ Open "01.2_Servo" in "Freenove_4WD_Car_Kit_for_Raspberry_Pi_Pico\\Ordinary_wheel
 
 .. image:: ../_static/imgs/Standard/2_Module_test_/Chapter02_08.png
     :align: center
+    :class: image-border
+    :width: 60%
 
 Code
 ----------------------------------
@@ -272,6 +276,8 @@ Open "01.3_Buzzer" folder in the "Freenove_4WD_Car_Kit_for_Raspberry_Pi_Pico\\Or
 
 .. image:: ../_static/imgs/Standard/2_Module_test_/Chapter02_12.png
     :align: center
+    :class: image-border
+    :width: 60%
 
 Code
 ----------
@@ -362,6 +368,8 @@ In this section, we will use GPIO26 of Raspberry Pi Pico (W) to read the voltage
 
 .. image:: ../_static/imgs/Standard/2_Module_test_/Chapter02_18.png
     :align: center
+    :class: image-border
+    :width: 60%
 
 Code
 -----------------------------
@@ -443,6 +451,7 @@ The LED matrix is common anode. As we can see from the schematic above, the anod
     :widths: 50 50
     :align: center
     :header-rows: 1
+    :class: table-line
 
     * - Front of LED Matrix
       - Back of LED Matrix
@@ -462,6 +471,7 @@ Below, the table on the left corresponds to the "+" above, and the table on the 
 
 .. table:: 
     :class: freenove-ow
+    :width: 70%
 
     +-----+-----------+-------------+
     | Row |  Binary   | Hexadecimal |
@@ -485,6 +495,7 @@ Below, the table on the left corresponds to the "+" above, and the table on the 
 
 .. table:: 
     :class: freenove-ow
+    :width: 70%
 
     +-----+-----------+-------------+
     | Row |  Binary   | Hexadecimal |
@@ -518,6 +529,8 @@ Click Sketch and select Add .ZIP Library in Include.
 
 .. image:: ../_static/imgs/Standard/2_Module_test_/Chapter02_27.png
     :align: center
+    :width: 99%
+    :class: image-border
 
 Select "Freenove_VK16K33_Lib.zip" in the folder Libraries of the folder 
 
@@ -525,6 +538,8 @@ Select "Freenove_VK16K33_Lib.zip" in the folder Libraries of the folder
 
 .. image:: ../_static/imgs/Standard/2_Module_test_/Chapter02_28.png
     :align: center
+    :width: 60%
+    :class: image-border
 
 Install Processing
 --------------------------------------

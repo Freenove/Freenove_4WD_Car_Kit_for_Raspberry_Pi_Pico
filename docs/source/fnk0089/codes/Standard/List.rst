@@ -11,6 +11,8 @@ Raspberry Pi Pico (W) Car Shield
    :widths: 50 50
    :header-rows: 1
    :align: center
+   :width: 90%
+   :class: table-line
 
    * - Top
      - Bottom
@@ -25,6 +27,8 @@ Machinery Parts
 
 .. list-table::
    :align: center
+   :width: 90%
+   :class: table-line
 
    * - |List02|
      - |List03|
@@ -41,6 +45,8 @@ Transmission Parts
 
 .. table:: 
     :align: center
+    :width: 90%
+    :class: table-line
 
     +-------------------------------------------------------------+---------------------------+
     | Servo package x1                                            | Driven wheel x4           |
@@ -66,6 +72,8 @@ Electronic Parts
 
 .. table:: 
     :align: center
+    :width: 90%
+    :class: table-line
 
     +-------------------------+-------------------------+-----------------------------+
     | Line tracking module x1 | Dot Matrix Module x1    | Ultrasonic Module x1        |
@@ -93,6 +101,8 @@ Wires
 
 .. list-table::
    :align: center
+   :width: 90%
+   :class: table-line
 
    * - XH-2.54-4Pin cable x1
    * - |List16|
@@ -109,6 +119,8 @@ Tools
 .. list-table::
    :header-rows: 1
    :align: center
+   :width: 90%
+   :class: table-line
 
    * - Cross screwdriver (3mm) x1
      - Black tape x1
@@ -124,6 +136,8 @@ Required but NOT Contained Parts
 
 .. table:: 
     :align: center
+    :width: 90%
+    :class: table-line
 
     +-------------------------------------------------------------------------------------------------+
     | 2 x 3.7V 18650 lithium rechargeable batteries with continuous discharge current > 3A.           |

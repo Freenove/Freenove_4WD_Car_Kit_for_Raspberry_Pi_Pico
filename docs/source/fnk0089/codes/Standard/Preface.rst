@@ -8,7 +8,7 @@ Based on the Raspberry Pi Pico (W) development board, a popular IoT control boar
 
 support@freenove.com 
 
-This car does not require a high threshold for users. Even if you know little professional knowledge, you can make your own smart car easily with the guidance of the tutorial. If you’re really interested in Raspberry Pi Pico (W) and hope to learn how to program and build circuits, please visit our website: www.freenove.com or contact us to buy our kit designed for beginners: :red:`Freenove Ultimate Kit for Raspberry Pi Pico.`
+This car does not require a high threshold for users. Even if you know little professional knowledge, you can make your own smart car easily with the guidance of the tutorial. If you're really interested in Raspberry Pi Pico (W) and hope to learn how to program and build circuits, please visit our website: www.freenove.com or contact us to buy our kit designed for beginners: :combo:`red font-bolder:Freenove Ultimate Kit for Raspberry Pi Pico.`
 
 Raspberry Pi Pico
 ************************************
@@ -28,11 +28,12 @@ The hardware interfaces are distributed as follows:
 .. table::
     :align: center
     :widths: 1 1
-    :width: 80%
+    :width: 90%
+    :class: table-line
 
     +-------------+---------------+
     | Frame color | Description   |
-    +-------------+---------------+
+    +=============+===============+
     | |Preface02| | Pins          |
     +-------------+---------------+
     | |Preface03| | BOOTSE button |
@@ -57,10 +58,12 @@ Function definition of pins:
 
 .. table::
     :align: center
+    :width: 90%
+    :class: table-line
 
     +-------------+----------------+-------------+-----------+
     | Color       | Pins           | Color       | Pins      |
-    +-------------+----------------+-------------+-----------+
+    +=============+================+=============+===========+
     | |Preface08| | GND            | |Preface13| | Power     |
     +-------------+----------------+-------------+-----------+
     | |Preface09| | GPIO           | |Preface14| | ADC       |
@@ -100,6 +103,8 @@ UART
 .. table::
     :align: center
     :class: freenove-ow
+    :width: 70%
+    :widths: 1 1
 
     +---------------+---------+
     |   Function    | Default |
@@ -121,6 +126,8 @@ I2C
 .. table::
     :align: center
     :class: freenove-ow
+    :width: 70%
+    :widths: 1 1
 
     +---------------+---------+
     |   Function    | Default |
@@ -138,6 +145,8 @@ SPI
 .. table::
     :align: center
     :class: freenove-ow
+    :width: 70%
+    :widths: 1 1
 
     +--------------+---------+
     |   Function   | Default |
@@ -179,11 +188,12 @@ The hardware interfaces are distributed as follows:
 .. table::
     :align: center
     :widths: 1 1
-    :width: 80%
+    :width: 90%
+    :class: table-line
 
     +-------------+---------------+
     | Frame color | Description   |
-    +-------------+---------------+
+    +=============+===============+
     | |Preface02| | Pins          |
     +-------------+---------------+
     | |Preface03| | BOOTSE button |
@@ -206,10 +216,12 @@ Function definition of pins:
 
 .. table::
     :align: center
+    :width: 90%
+    :class: table-line
 
     +-------------+----------------+-------------+-----------+
     | Color       | Pins           | Color       | Pins      |
-    +-------------+----------------+-------------+-----------+
+    +=============+================+=============+===========+
     | |Preface08| | GND            | |Preface13| | Power     |
     +-------------+----------------+-------------+-----------+
     | |Preface09| | GPIO           | |Preface14| | ADC       |
@@ -238,6 +250,8 @@ UART
 .. table::
     :align: center
     :class: freenove-ow
+    :width: 70%
+    :widths: 1 1
 
     +---------------+---------+
     |   Function    | Default |
@@ -259,6 +273,8 @@ I2C
 .. table::
     :align: center
     :class: freenove-ow
+    :width: 70%
+    :widths: 1 1
 
     +---------------+---------+
     |   Function    | Default |
@@ -276,6 +292,8 @@ SPI
 .. table::
     :align: center
     :class: freenove-ow
+    :width: 70%
+    :widths: 1 1
 
     +--------------+---------+
     |   Function   | Default |
@@ -305,6 +323,8 @@ Wireless
 .. table::
     :align: center
     :class: freenove-ow
+    :width: 70%
+    :widths: 1 1
 
     +----------+------------+
     | Function |  Default   |
@@ -336,11 +356,12 @@ The hardware interfaces are distributed as follows:
 .. table::
     :align: center
     :widths: 1 1
-    :width: 80%
+    :width: 90%
+    :class: table-line
 
     +-------------+---------------+
     | Frame color | Description   |
-    +-------------+---------------+
+    +=============+===============+
     | |Preface02| | Pins          |
     +-------------+---------------+
     | |Preface03| | BOOTSE button |
@@ -359,10 +380,12 @@ Function definition of pins:
 
 .. table::
     :align: center
+    :class: table-line
+    :width: 90%
 
     +-------------+----------------+-------------+-----------+
     | Color       | Pins           | Color       | Pins      |
-    +-------------+----------------+-------------+-----------+
+    +=============+================+=============+===========+
     | |Preface08| | GND            | |Preface13| | Power     |
     +-------------+----------------+-------------+-----------+
     | |Preface09| | GPIO           | |Preface14| | ADC       |
@@ -383,6 +406,8 @@ UART
 .. table::
     :align: center
     :class: freenove-ow
+    :widths: 1 1
+    :width: 70%
 
     +---------------+---------+
     |   Function    | Default |
@@ -404,6 +429,8 @@ I2C
 .. table::
     :align: center
     :class: freenove-ow
+    :widths: 1 1
+    :width: 70%
 
     +---------------+---------+
     |   Function    | Default |
@@ -421,6 +448,8 @@ SPI
 .. table::
     :align: center
     :class: freenove-ow
+    :widths: 1 1
+    :width: 70%
 
     +--------------+---------+
     |   Function   | Default |
@@ -462,11 +491,12 @@ The hardware interfaces are distributed as follows:
 .. table::
     :align: center
     :widths: 1 1
-    :width: 80%
+    :width: 90%
+    :class: table-line
 
     +-------------+---------------+
     | Frame color | Description   |
-    +-------------+---------------+
+    +=============+===============+
     | |Preface02| | Pins          |
     +-------------+---------------+
     | |Preface03| | BOOTSE button |
@@ -487,10 +517,12 @@ Function definition of pins:
 
 .. table::
     :align: center
+    :width: 90%
+    :class: table-line
 
     +-------------+----------------+-------------+-----------+
     | Color       | Pins           | Color       | Pins      |
-    +-------------+----------------+-------------+-----------+
+    +=============+================+=============+===========+
     | |Preface08| | GND            | |Preface13| | Power     |
     +-------------+----------------+-------------+-----------+
     | |Preface09| | GPIO           | |Preface14| | ADC       |
@@ -513,6 +545,8 @@ UART
 .. table::
     :align: center
     :class: freenove-ow
+    :width: 70%
+    :widths: 1 1
 
     +---------------+---------+
     |   Function    | Default |
@@ -534,6 +568,8 @@ I2C
 .. table::
     :align: center
     :class: freenove-ow
+    :width: 70%
+    :widths: 1 1
 
     +---------------+---------+
     |   Function    | Default |
@@ -551,6 +587,8 @@ SPI
 .. table::
     :align: center
     :class: freenove-ow
+    :width: 70%
+    :widths: 1 1
 
     +--------------+---------+
     |   Function   | Default |
@@ -580,6 +618,8 @@ Wireless
 .. table::
     :align: center
     :class: freenove-ow
+    :width: 70%
+    :widths: 1 1
 
     +----------+------------+
     | Function |  Default   |
@@ -602,10 +642,11 @@ The functions of the pins are allocated as follows:
 
 .. table::
     :align: center
+    :class: table-line
 
     +-----------------------------+--------------------------------------+-------------+
     | Pins of Raspberry Pi Pico W | Funtions                             | Description |
-    +-----------------------------+--------------------------------------+-------------+
+    +=============================+======================================+=============+
     | GPIO18                      | Motor                                | M1_IN1      |
     +-----------------------------+                                      +-------------+
     | GPIO19                      |                                      | M1_IN2      |

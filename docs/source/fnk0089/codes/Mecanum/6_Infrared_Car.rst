@@ -26,6 +26,7 @@ The following is the key value that the receiving circuit will receive when each
 
 .. table:: 
     :align: center
+    :class: table-line
 
     +----------------+-----------+----------------+-----------+
     | ICON           | KEY Value | ICON           | KEY Value |
@@ -111,7 +112,7 @@ Second, define an infrared receive pin and the infrared sensor is initialized.
 .. code-block:: c
     :linenos:
 
-    #define IR_Pin 3                      // Infrared receiving pin
+    #define IR_Pin 3                                 // Infrared receiving pin
     ...
     IrReceiver.begin(IR_Pin, DISABLE_LED_FEEDBACK);  // Start the receiver
 
@@ -133,7 +134,7 @@ Based on the previous section, we use the infrared remote control to control the
 Sketch
 ==============================
 
-Open the folder “05.2_IR_Receiver_Car” in the “Freenove_4WD_Car_Kit_for_Raspberry_Pi_Pico\\Mecanum_wheels\\Sketches” and double click “05.2_IR_Receiver_Car.ino”.
+Open the folder **“05.2_IR_Receiver_Car”** in the **“Freenove_4WD_Car_Kit_for_Raspberry_Pi_Pico\\Mecanum_wheels\\Sketches”** and double click **“05.2_IR_Receiver_Car.ino”**.
 
 Code
 ------------------------------
@@ -147,6 +148,7 @@ Compile and upload the code to Raspberry Pi Pico (W). When the '▶' key is pres
 
 .. table:: 
     :align: center
+    :class: table-line
 
     +-----------------+-----------------+-------------------------+
     | |Chapter06M_00| | |Chapter06M_12| | Move forward            |
@@ -243,16 +245,16 @@ Infrared key code value processing function, receives instructions sent by the i
             ...
             case 0xE916FF00:  // Receive the number '0'
             ...
-        case 0XEA15FF00:  // Receive the number ' ▶'
-        ...
-        case 0xB847FF00:  // Receive the number 'MENU'
-            battery_voltage = Get_Battery_Voltage();
-            rotate_flag = !rotate_flag;
-            set_angle = 0;
-            break;
+            case 0XEA15FF00:  // Receive the number ' ▶'
             ...
-            default:        // Control the car to stop moving
-            ...
+            case 0xB847FF00:  // Receive the number 'MENU'
+                battery_voltage = Get_Battery_Voltage();
+                rotate_flag = !rotate_flag;
+                set_angle = 0;
+                break;
+                ...
+            default:          // Control the car to stop moving
+                ...
         }
     }
 
@@ -281,6 +283,7 @@ After the code is successfully uploaded, turn on the power of the car and use th
 
 .. table:: 
     :align: center
+    :class: table-line
 
     +----------------+-----------+---------------------------+----------------+-----------+----------------------------------------+
     | ICON           | KEY Value | Function                  | ICON           | KEY Value | Function                               |
@@ -374,9 +377,9 @@ Infrared key code value processing function receives instructions sent by the in
             case 0xAD52FF00:  // Receive the number '8'
             ...
             case 0xFFFFFFFF:  // Remain unchanged
-            break;
+                break;
             default:
-            break;
+                break;
         }
     }
 

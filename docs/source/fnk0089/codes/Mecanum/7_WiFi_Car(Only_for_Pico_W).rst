@@ -397,7 +397,7 @@ Open a TCP server port.  Port 4002 is used to receive commands from the car.
     :lines: 42-42
     :dedent:
 
-Call the WiFi_Init() to initialize the WiFi parameters. Call the WiFi_Setup() to initialize the Raspberry Pi Pico W’s WiFi. 
+Call the WiFi_Init() to initialize the WiFi parameters. Call the WiFi_Setup() to initialize the Raspberry Pi Pico W's WiFi. 
 
 AP mode starts when the WiFi_Setup parameter is 1, and STA mode when the parameter is 0. After Raspberry Pi Pico W starts WIFI, it prints the IP information on the serial monitor.
 

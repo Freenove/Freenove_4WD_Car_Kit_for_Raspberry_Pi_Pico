@@ -10,15 +10,20 @@ This chapter requires replacing the LED matrix with the ultrasonic module. Pleas
 Replace the ultrasonic module.
 ===================================
 
-+-------------------------------------------------------+
-| Step 1 Installing the ultrasonic module.              |
-|                                                       |
-| |Chapter03_00|                                        |
-+-------------------------------------------------------+
-| Use cable to connect the two connectors marked below. |
-|                                                       |
-| |Chapter03_01|                                        |
-+-------------------------------------------------------+
+.. table:: 
+    :align: center
+    :class: table-line
+    :width: 90%
+
+    +-------------------------------------------------------+
+    | Step 1 Installing the ultrasonic module.              |
+    |                                                       |
+    | |Chapter03_00|                                        |
+    +-------------------------------------------------------+
+    | Use cable to connect the two connectors marked below. |
+    |                                                       |
+    | |Chapter03_01|                                        |
+    +-------------------------------------------------------+
 
 .. |Chapter03_00| image:: ../_static/imgs/Standard/3_Ultrasonic_Obstacle_Avoidance_Car/Chapter03_00.png
 .. |Chapter03_01| image:: ../_static/imgs/Standard/3_Ultrasonic_Obstacle_Avoidance_Car/Chapter03_01.png
@@ -34,7 +39,9 @@ The ultrasonic ranging module uses the principle that ultrasonic waves will be s
 The ultrasonic ranging module integrates both an ultrasonic transmitter and a receiver. The transmitter is used to convert electrical signals (electrical energy) into high frequency (beyond human hearing) sound waves (mechanical energy) and the function of the receiver is opposite of this. The picture and the diagram of the ultrasonic ranging module are shown below: 
 
 .. list-table::
-    
+    :class: table-line
+    :align: center
+
     * - |Chapter03_03| 
       - |Chapter03_04|
 
@@ -59,13 +66,14 @@ Pin description:
     +------+------------------+
 
 **Technical specs:**
-Working voltage: 5V                              
 
-Working current: 12mA
+- Working voltage: 5V                              
 
-Minimum measured distance: 2cm          
+- Working current: 12mA
 
-Maximum measured distance: 200cm
+- Minimum measured distance: 2cm          
+
+- Maximum measured distance: 200cm
 
 Instructions for use: output a high-level pulse in Trig pin lasting for least 10us, the module begins to transmit ultrasonic waves. At the same time, the Echo pin is pulled up. When the module receives the returned ultrasonic waves from encountering an obstacle, the Echo pin will be pulled down. The duration of high level in the Echo pin is the total time of the ultrasonic wave from transmitting to receiving, s=vt/2. 
 
@@ -85,9 +93,7 @@ Sketch
 
 When the power of the car is turned ON, every module will be initialized and the servo motor will rotate to 90°. The ultrasonic data will be obtained and printed through serial port as the servo motor rotates.
 
-Open the folder "02.1_Ultrasonic_Ranging" in 
-
-"Freenove_4WD_Car_Kit_for_Raspberry_Pi_Pico\\Ordinary_wheels\\Sketches" and double click "02.1_Ultrasonic_Ranging.ino"
+Open the folder "02.1_Ultrasonic_Ranging" in **"Freenove_4WD_Car_Kit_for_Raspberry_Pi_Pico\\Ordinary_wheels\\Sketches"** and double click **"02.1_Ultrasonic_Ranging.ino"**
 
 Code
 -----------------------------

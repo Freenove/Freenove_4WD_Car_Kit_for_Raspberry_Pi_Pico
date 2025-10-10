@@ -26,6 +26,7 @@ The following is the key value that the receiving circuit will receive when each
 
 .. table:: 
     :align: center
+    :class: table-line
 
     +----------------+-----------+----------------+-----------+
     | ICON           | KEY Value | ICON           | KEY Value |
@@ -150,6 +151,7 @@ Compile and upload the code to Raspberry Pi Pico (W).  When pressing "0" of the 
 
 .. table:: 
     :align: center
+    :class: table-line
 
     +----------------+----------------+--------------+
     | |Chapter06_22| | |Chapter06_26| | Move forward |
@@ -207,16 +209,13 @@ Infrared key code value processing function, receives instructions sent by the i
 6.3 Multi-Functional Infrared Car
 ***************************************************
 
-Following the previous section, we now integrate other functions into the infrared car, and most of the car’s functions can be controlled by the infrared remote.
+Following the previous section, we now integrate other functions into the infrared car, and most of the car's functions can be controlled by the infrared remote.
 
 Sketch
 =================================
 
-Open the folder “05.3_Multi_Functional_Car” in the 
-
-“Freenove_4WD_Car_Kit_for_Raspberry_Pi_Pico\\Ordinary_wheels\\Sketches” 
-
-and double click “05.3_Multi_Functional_Car.ino”.
+Open the folder “05.3_Multi_Functional_Car” in the **“Freenove_4WD_Car_Kit_for_Raspberry_Pi_Pico\\Ordinary_wheels\\Sketches”** 
+and double click **“05.3_Multi_Functional_Car.ino”**.
 
 Code
 ---------------------------------
@@ -233,6 +232,7 @@ After the code is successfully uploaded, turn on the power of the car and use th
 
 .. table:: 
     :align: center
+    :class: table-line
 
     +----------------+-----------+---------------------------+----------------+-----------+----------------------------------------+
     | ICON           | KEY Value | Function                  | ICON           | KEY Value | Function                               |

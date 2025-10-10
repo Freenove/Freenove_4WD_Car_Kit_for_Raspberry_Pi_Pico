@@ -19,6 +19,8 @@ Installation steps:
 
 .. table::
     :align: center
+    :class: table-line
+    :width: 90%
 
     +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
     | Step 1 Fix the bracket on the shield.                                                                                                                               |
@@ -67,6 +69,8 @@ Installation steps:
 
 .. table::
     :align: center
+    :class: table-line
+    :width: 90%
 
     +----------------------------------------------------------------------------------------------------------------------------------------+
     | Plug Raspberry Pi Pico (W) into the shield.                                                                                            |
@@ -88,6 +92,8 @@ Servo package: one servo, three rocker arms, two M2*8 screws and one M2*4 screw.
 
 .. table::
     :align: center
+    :class: table-line
+    :width: 90%
 
     +-----------------------------------------------------------------------------------------------------------------+
     | Step 1 Fix servo1 to the shield.                                                                                |
@@ -117,6 +123,8 @@ Installing Line Tracking Module
 
 .. table::
     :align: center
+    :class: table-line
+    :width: 90%
 
     +----------------------------------------------------------------------------------------------------------------------------------------------------------------+
     | Step 1 Installing line tracking module                                                                                                                         |
@@ -140,6 +148,8 @@ Mounting the Servo Arm to Module Connector.
 
 .. table::
     :align: center
+    :class: table-line
+    :width: 90%
 
     +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
     | Step 1 Mount the servo arm to acoustic wave module or expression module connector. The screw and arm are in the same bag with servo.                                                               |
@@ -166,6 +176,8 @@ Plugging in LED Matrix or ultrasonic module
 
 .. table::
     :align: center
+    :class: table-line
+    :width: 90%
 
     +-------------------------------------------------+
     | Step 1 Install LED Matrix or ultrasonic module. |
@@ -183,6 +195,8 @@ Installing two 18650 batteries
 
 .. table::
     :align: center
+    :class: table-line
+    :width: 90%
 
     +-------------------------------------------------------------------------------------------------------+
     | Step 1 Installed with batteries. When installing them, please following the silk print on the board.  |
