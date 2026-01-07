@@ -35,3 +35,4 @@ This product provides the following online documents.
 
    fnk0089/codes/Standard.rst
    fnk0089/codes/Mecanum.rst
+   fnk0089/codes/Product_Certification.rst
